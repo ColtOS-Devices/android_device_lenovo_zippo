@@ -6,3 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/colt_zippo.mk
+
+COMMON_LUNCH_CHOICES := \
+    colt_zippo-user \
+    colt_zippo-userdebug \
+    colt_zippo-eng
