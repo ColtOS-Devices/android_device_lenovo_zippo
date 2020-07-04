@@ -9,6 +9,7 @@ $(call inherit-product, device/lenovo/zippo/device.mk)
 # Inherit some common ColtOS stuff.
 $(call inherit-product, vendor/colt/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080x2340
+EXTRA_FOD_ANIMATIONS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
