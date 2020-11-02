@@ -91,3 +91,7 @@ persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Other Options
 persist.sys.cust.lte_config=true
+
+# SurfaceFlinger brightness tweak
+ro.sf.force_light_brightness=1
+
