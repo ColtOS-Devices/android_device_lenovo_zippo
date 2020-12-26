@@ -6,24 +6,16 @@
 
 $(call inherit-product, device/lenovo/zippo/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common ArrowOS stuff.
+$(call inherit-product, vendor/arrow/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_MAINTAINER := EinarGednochsson
-XTENDED_BUILD_TYPE := OFFICIAL
-
-# FOD animations
-EXTRA_FOD_ANIMATIONS := true
-
-# Inherit Pixel apn
-$(call inherit-product, vendor/xtended/telephony/telephony.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
 PRODUCT_DEVICE := zippo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := Lenovo Z6 Pro
-PRODUCT_NAME := xtended_zippo
+PRODUCT_NAME := arrow_zippo
 
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
