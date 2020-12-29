@@ -9,6 +9,7 @@ $(call inherit-product, device/lenovo/zippo/device.mk)
 # Inherit some common ArrowOS stuff.
 $(call inherit-product, vendor/arrow/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
+DEVICE_MAINTAINER := EinarGednochsson
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
