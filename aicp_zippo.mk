@@ -6,17 +6,16 @@
 
 $(call inherit-product, device/lenovo/zippo/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-DEVICE_MAINTAINER := EinarGednochsson
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
 PRODUCT_DEVICE := zippo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := Lenovo Z6 Pro
-PRODUCT_NAME := arrow_zippo
+PRODUCT_NAME := aicp_zippo
 
 BUILD_FINGERPRINT := "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys"
 
@@ -26,3 +25,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="zippo"
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="EinarGednochsson"
