@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_zippo.mk
+    $(LOCAL_DIR)/colt_zippo.mk

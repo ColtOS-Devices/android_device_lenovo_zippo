@@ -6,11 +6,11 @@
 
 $(call inherit-product, device/lenovo/zippo/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_MAINTAINER := EinarGednochsson
-XTENDED_BUILD_TYPE := OFFICIAL
+# Inherit some common Colt stuff.
+$(call inherit-product, vendor/colt/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080x2340
+COLT_MAINTAINER := EinarGednochsson
+COLT_BUILD_TYPE := OFFICIAL
 
 # FOD animations
 EXTRA_FOD_ANIMATIONS := true
@@ -23,7 +23,7 @@ PRODUCT_BRAND := Lenovo
 PRODUCT_DEVICE := zippo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := Lenovo Z6 Pro
-PRODUCT_NAME := xtended_zippo
+PRODUCT_NAME := colt_zippo
 
 BUILD_FINGERPRINT := "google/sunfish/sunfish:11/RQ1A.210205.004/7038034:user/release-keys"
 
