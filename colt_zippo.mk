@@ -1,26 +1,30 @@
 #
-# Copyright (C) 2022 The Xtended Project
+# Copyright (C) 2022 The ColtOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 $(call inherit-product, device/lenovo/zippo/device.mk)
 
-# Inherit some common Xtended stuff.
-$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
+# Inherit some common Colt stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-XTENDED_BUILD_TYPE := OFFICIAL
-XTENDED_BUILD_MAINTAINER := EinarG. 
 
-# FoD Animations
-EXTRA_UDFPS_ANIMATIONS := true
+# Build Variant
+COLT_BUILD_TYPE := Official
+
+# Maintainer
+COLT_BUILD_MAINTAINER := EinarG.
+
+# Udfps Customizations 
+TARGET_HAS_UDFPS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Lenovo
 PRODUCT_DEVICE := zippo
 PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_MODEL := Lenovo L78051
-PRODUCT_NAME := xtended_zippo
+PRODUCT_NAME := colt_zippo
 
 PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
